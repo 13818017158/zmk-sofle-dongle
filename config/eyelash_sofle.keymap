@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp TILDE>, <&kp ESC>;
+            bindings = <&kp GRAVE>, <&kp ESC>;
         };
     };
 
