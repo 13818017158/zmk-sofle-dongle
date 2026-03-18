@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - $$mdi:keyboard-esc$$
+  - '&td_esc'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -52,15 +52,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - layer1
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: LGUI}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: LGUI}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - $$mdi:apple-keyboard-shift$$
@@ -260,3 +260,24 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [34, 22]
+  k: {t: '1', s: '!'}
+  l: [LAYER0]
+- p: [34, 35]
+  k: {t: '2', s: '@'}
+  l: [LAYER0]
+- p: [34, 48]
+  k: {t: '3', s: '#'}
+  l: [LAYER0]
+- p: [34, 23]
+  k: {t: '4', s: $}
+  l: [LAYER0]
+- p: [34, 36]
+  k: {t: '5', s: '%'}
+  l: [LAYER0]
+- p: [34, 49]
+  k: {t: '6', s: ^}
+  l: [LAYER0]
+- p: [14, 28, 40]
+  k: '&soft_off'
